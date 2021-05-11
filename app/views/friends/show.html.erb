@@ -1,29 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div style="
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+">
 
-<p>
-  <strong>First name:</strong>
-  <%= @friend.first_name %>
-</p>
+  <h1>
+    <%= @friend.first_name %>
+    <%= @friend.last_name %>
+  </h1>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @friend.last_name %>
-</p>
+  <p class="">
+    <%= @friend.email %> |
+    <%= @friend.phone %> |
+    <%= @friend.twitter %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @friend.email %>
-</p>
+  <br />
+  <hr />
+  <br />
 
-<p>
-  <strong>Phone:</strong>
-  <%= @friend.phone %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @friend.twitter %>
-</p>
-
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
+  <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %>
+  <%= link_to 'Back', friends_path, class:"btn btn-secondary" %>
+</div>
