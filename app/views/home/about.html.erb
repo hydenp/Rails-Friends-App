@@ -1,3 +1,13 @@
+
+<script>
+    function update(new_disp) {
+        document.getElementById('testing').innerHTML = new_disp;
+    }
+
+</script>
+
+
+
 <h1>About Us<h1>
 
 <p>
@@ -5,3 +15,12 @@
 </p>
 
 <p> I like beer</p>
+<br>
+<p id='testing'> I like beer</p>
+
+<button onclick="update('hello hyden')">Click me!</button>
+
+<br>
+<br>
+
+<%= @time%>
